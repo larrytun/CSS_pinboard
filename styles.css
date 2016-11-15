@@ -34,10 +34,9 @@ body {
   left: 55%;
 }
 
-
 .duck-polaroid {
   position: absolute;
-
+  width: 450px;
 }
 
 .duck-polaroid img {
