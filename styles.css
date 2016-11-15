@@ -2,8 +2,42 @@ body {
   background-image: url("img/cork-board.jpg");
 }
 
+.bernie-polaroid {
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+
+.bernie-polaroid img {
+  width: 450px;
+  z-index: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-10deg);
+}
+
+.bernie-polaroid:before{
+  content: url("img/bernie.jpg");
+  position: absolute;
+  z-index: -1;
+  top: 8%;
+  left: 60%;
+  transform: rotate(-10deg);
+}
+
+.bernie-polaroid:after {
+  content: url("img/red-pin.png");
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 55%;
+}
+
+
 .duck-polaroid {
   position: absolute;
+
 }
 
 .duck-polaroid img {
