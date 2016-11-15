@@ -1,0 +1,30 @@
+body {
+  background-image: url("img/cork-board.jpg");
+}
+
+.duck-polaroid {
+  position: absolute;
+}
+
+.duck-polaroid img {
+  width: 450px;
+  z-index: 0;
+  position: relative;
+  transform: rotate(-10deg);
+}
+
+.duck-polaroid:before {
+  content: url("img/baby-duck.jpg");
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  z-index: -1;
+  transform: rotate(-10deg);
+}
+
+.duck-polaroid:after {
+  content: url("img/red-pin.png");
+  position: absolute;
+  top: 6%;
+  left: 3%;
+}
